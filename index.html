@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form id="booking-form">
+    <div class="row g-3">
+        <div class="col-12 col-sm-6">
+            <input type="text" class="form-control border-0" id="name" placeholder="Your Name" style="height: 55px;">
+        </div>
+        <div class="col-12 col-sm-6">
+            <input type="email" class="form-control border-0" id="email" placeholder="Your Email" style="height: 55px;" required>
+        </div>
+        <div class="col-12 col-sm-6">
+          <select class="form-select border-0" style="height: 55px;">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <optgroup label="Ac">
+              <option value="subDropdown">
+                Sub Dropdown
+               
+                  <option value="subOption1">Sub Option 1</option>
+                  <option value="subOption2">Sub Option 2</option>
+             
+              </option>
+            </optgroup>
+            <optgroup label="solar">
+                <option value="subDropdown">
+                  Sub Dropdown
+                 
+                    <option value="subOption1">Sub Option 1</option>
+                    <option value="subOption2">Sub Option 2</option>
+               
+                </option>
+              </optgroup>
+              <optgroup label="color">
+                <option value="subDropdown">
+                  Sub Dropdown
+                 
+                    <option value="subOption1">Sub Option 1</option>
+                    <option value="subOption2">Sub Option 2</option>
+               
+                </option>
+              </optgroup>
+              <optgroup label="cctv">
+                <option value="subDropdown">
+                  Sub Dropdown
+                 
+                    <option value="subOption1">Sub Option 1</option>
+                    <option value="subOption2">Sub Option 2</option>
+               
+                </option>
+              </optgroup>
+            <option value="option3">Option 3</option>
+
+            
+
+        </select>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="date" id="date1" data-target-input="nearest">
+                <input type="date" class="form-control border-0 datetimepicker-input" id="service" placeholder="Service Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
+            </div>
+        </div>
+        <div class="col-12">
+            <textarea class="form-control border-0" id="Request" placeholder="Special Request" required></textarea>
+        </div>
+       
+    </div>
+           <label for="location">Your Location:</label>
+        <input type="text" id="location" name="location" required placeholder="Enter your location" readonly>
+        <button type="button"  onclick="getLocation()" >Get My Location</button>
+        <div class="col-12">
+          <button type="button" id="booking-final"  class="btn btn-secondary w-100 py-3">
+              Book Now
+          </button>
+      </div>
+    
+
+</form>
+<script src="av.js"></script>
+</body>
+</html>
